@@ -43,7 +43,15 @@ void  ParentProcess(void);               /* parent process prototype */
     int rc;
     
     rc = fork();
-    if (rc == 0)
+    if (rc == -1)
+    {
+        printf("");
+        {
+            printf("ERROR; return code from fork() is %d\n", rc);
+            exit(-1);
+        }
+    }
+    else if (rc == 0)
     {
         ChildProcess();
     }
