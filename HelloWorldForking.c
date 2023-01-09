@@ -45,7 +45,6 @@ void  ParentProcess(void);               /* parent process prototype */
     rc = fork();
     if (rc == -1)
     {
-        printf("");
         {
             printf("ERROR; return code from fork() is %d\n", rc);
             exit(-1);
