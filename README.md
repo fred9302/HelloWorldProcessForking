@@ -1,1 +1,2 @@
 # HelloWorldProcessForking
+Hello World forking of process with distinciton between child- and parent process based on code and knowledge from https://www.csl.mtu.edu/cs4411.ck/www/NOTES/process/fork/create.html
